@@ -106,7 +106,9 @@ class TrigPro:
         print(f"\n🔥 {self.max_streak} | ✅ {self.correct} | ❌ {self.wrong}\n")
 
 def main():
-    quiz = TrigPro(6)
+    system("clear")
+    problems = input("How many problems would you like to solve? ")
+    quiz = TrigPro(int(problems))
     quiz.run_quiz()
     quiz.display_results()
 
