@@ -33,7 +33,7 @@ def trig(problems):
         system("clear")
         randnom_angle   = random.choice(list(angles.keys()))
         random_function = random.choice(list(functions.keys()))
-        user_answer     = str(input(f"\nWhat is the value of {str(random_function)}" + str(random_function) + "(" + randnom_angle + ")? "))
+        user_answer     = str(input(f"\nWhat is the value of {random_function}({randnom_angle})?"))
         answer          = Fraction(round(functions[random_function](angles[randnom_angle]), 2))
 
         if answer in answers:
