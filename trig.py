@@ -68,7 +68,7 @@ class TrigPro:
         for i in range(self.problems):
             system("clear")
             problem = self.generate_problem()
-            user_answer = input(f"\nWhat is the value of {problem[1]}({problem[0]})?")
+            user_answer = input(f"\nWhat is the value of {problem[1]}({problem[0]})? ")
 
             while not self.validate_answer(user_answer):
                 user_answer = input("Invalid answer. Try again: ")
