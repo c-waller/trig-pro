@@ -35,7 +35,7 @@ This project is a Python application that allows users to test their knowledge o
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/c-waller/trigonometry-quiz.git
+   git clone https://github.com/c-waller/trig-pro.git
 
 ## Usage
 - Start the application by running `trig.py`.
