@@ -35,13 +35,13 @@ class TrigPro:
         self.max_streak = 0
 
     def generate_problem(self):
-        randnom_angle = random.choice(list(self.angles.keys()))
+        random_angle = random.choice(list(self.angles.keys()))
         random_function = random.choice(list(self.functions.keys()))
-        return randnom_angle, random_function
+        return random_angle, random_function
 
     def check_answer(self, user_answer, problem):
-        randnom_angle, random_function = problem
-        answer = self.calculate_answer(random_function, randnom_angle)
+        random_angle, random_function = problem
+        answer = self.calculate_answer(random_function, random_angle)
 
         if user_answer == answer:
             self.correct += 1
@@ -97,7 +97,7 @@ class TrigPro:
         if self.current_streak > 2:
             print("🔥 0")
         sleep(1)
-        print(f"\n❌ The answer is: {problem[1]}({problem[0]})")
+        print(f"\n❌ The answer is: {str(self.calculate_answer(problem[1], problem[0]))}")
         sleep(0.5)
         input("\nENTER to continue.")
 
